@@ -1,0 +1,133 @@
+require("./myFile.cs")
+
+const uneditable = "This is uneditable."
+
+object = {
+ a: "Hello!",
+ b: "World!",
+ c: () -> {
+  console.log("Hello World!")
+ }
+}
+
+array = []
+
+i = 0
+i = "\0" + "Hello world" + "!"
+i = `hello ${variable}`
+
+i += 1
+i += "!"
+i -= 1
+i *= 1
+i /= 1
+i %= 1
+i **= 1
+i <<= 1
+i >>= 1
+i &= 1
+i |= 1
+i ^= 1
+
+if(i == 0) print("==")
+if(i === 0) print("===")
+if(i != 0) print("!=")
+if(i !== 0) print("!==")
+if(i > 0) print(">")
+if(i < 0) print("<")
+if(i >= 0) print(">=")
+if(i <= 0) print("<=")
+if(10 > i > 0) print("10 > i > 0")
+if(10 < i < 0) print("10 < i < 0")
+if(10 >= i >= 0) print("10 >= i >= 0")
+if(10 <= i <= 0) print("10 <= i <= 0")
+
+for(index -> value of array) {
+}
+
+for(value of array) {
+}
+
+for(i = 0; i < array.length; i++) {
+}
+
+while(i < array.length) {
+}
+
+switch(i) {
+ case 0:
+  break;
+ case 1:
+  break;
+ default:
+  break;
+}
+
+match(i) {
+ case 0:
+  break;
+ case 1:
+  break;
+ default:
+  break;
+}
+
+func a(): void {
+ if(d && e) {
+  print("hello!")
+ } else if(c && b) {
+  print("hello!")
+ } else {
+  print("hello!")
+ }
+}
+
+async a(): void {
+ await sleep(1);
+}
+
+class a(x, y) {
+ this.x = x
+ this.y = y
+ this.hello = () -> {
+  print("hello!")
+ }
+}
+
+class b() extends A, B, C, D {
+ super.A.call(1, 2)
+ super.B.call(1, 2)
+ super.C.call(1, 2)
+ super.D.call(1, 2)
+ super.hello()
+}
+
+abstract class c() {
+ this.hello = abstract () -> {
+  print("hello!")
+ }
+ this.helloAy = func() {
+  print("hello!")
+ }
+ this.orHello = abstract func() {
+  print("hello!")
+ }
+ this.hi = async abstract func() {
+  print("hello!")
+ }
+ this.evenThis = abstract async func() {
+  print("hello!")
+ }
+}
+
+myMap = new Map()
+myMap.set("key", "value")
+myMap.get("key")
+myMap.has("key")
+myMap.delete("key")
+
+
+myPromise = new Promise((resolve, reject) -> {
+ resolve("hello!")
+ reject("hello!")
+})
